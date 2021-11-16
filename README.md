@@ -1,2 +1,2 @@
 # PythonProject
-Exercícios de Python do Curso em Vídeo
+Minhas resoluções dos exercícios de Python do Curso em Vídeo
