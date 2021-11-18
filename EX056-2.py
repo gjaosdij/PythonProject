@@ -1,1 +1,19 @@
-# Refazer o EX056-1 com algumas alterações para tornar o programa mais eficiente
+mediaidade = 0
+maioridadehomem = 0
+nomevelho = ''
+totmulher20 = 0
+
+for p in range(1, 5):
+    print(f'----- {p}ª PESSOA -----')
+    nome = input('Nome: ')
+    idade = int(input('Idade: '))
+    sexo = input('Sexo [F/M]: ')
+    mediaidade += idade/4
+    if sexo in 'Mm' and idade > maioridadehomem:
+        maioridadehomem = idade
+        nomevelho = nome
+    if sexo in 'Ff' and idade < 20:
+        totmulher20 += 1
+print('A média de idade do grupo é de {:.1f} anos.'.format(mediaidade))
+print(f'O homem mais velho tem {maioridadehomem} anos e se chama {nomevelho}.')
+print('Ao todo há {} mulher{} com menos de 20 anos.'.format(totmulher20, '' if totmulher20== 1 else 'es'))

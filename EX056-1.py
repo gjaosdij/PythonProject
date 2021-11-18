@@ -18,6 +18,6 @@ for p in range(1, 5):
     if sexo in 'Ff' and idade < 20:
         totmulher20 += 1
 mediaidade = somaidade/4
-print(f'A média de idade do grupo é de {mediaidade} anos.')
+print('A média de idade do grupo é de {:.1f} anos.'.format(mediaidade))
 print(f'O homem mais velho tem {maioridadehomem} anos e se chama {nomevelho}.')
 print('Ao todo há {} mulher{} com menos de 20 anos.'.format(totmulher20, '' if totmulher20== 1 else 'es'))
