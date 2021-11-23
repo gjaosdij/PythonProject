@@ -16,4 +16,4 @@ while jogada != computador:
     ntentativas += 1
     jogada = int(input('Qual é o seu palpite? '))
 
-print('Acertou com {} tentativa{}. Parabéns!'.format(ntentativas + 1, '' if ntentativas == 0 else 's'))
+print('Acertou com {} tentativa{}. Parabéns!'.format(ntentativas + 1, '' if ntentativas == 0  else 's'))
