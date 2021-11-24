@@ -1,3 +1,4 @@
+# Testar e comparar com a versão do Guanabara
 cinco = False
 
 print('\033[33m=-='*10, '\033[m')
@@ -29,5 +30,6 @@ while not cinco:
         v2 = int(input('Segundo valor: '))
     elif opção == 5:
         cinco = True
+    print('Finalizando...')
     print('\033[33m=-='*10, '\033[m')
-print('Finalizando...')
+print('Fim do programa! Volte sempre!')
