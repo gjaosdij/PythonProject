@@ -1,4 +1,3 @@
-# opção 4 não funciona corretamente
 cinco = False
 
 print('\033[33m=-='*10, '\033[m')
