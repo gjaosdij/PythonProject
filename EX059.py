@@ -34,5 +34,5 @@ while not cinco:
         sleep(2)
     else:
         print('Opção inválida. Tente novamente.')
-    print('\033[33m=-='*10, '\033[m')3
+    print('\033[33m=-='*10, '\033[m')
 print('Fim do programa! Volte sempre!')
