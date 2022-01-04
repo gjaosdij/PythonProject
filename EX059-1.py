@@ -1,4 +1,3 @@
-# Bug na linha 15, if desalinhado
 from time import sleep
 
 n1 = int(input('Primeiro valor: '))
@@ -12,18 +11,18 @@ while opção != 5:
 [ 4 ] Novos números
 [ 5 ] Sair do programa''')
 
-opção = int(input('\n\033[32m>>>>> Qual é a sua opção? '))
+    opção = int(input('\n\033[32m>>>>> Qual é a sua opção?'))
     
-if opção == 1:
+    if opção == 1:
         print(f'{n1} + {n2} = {n1+n2}')
-elif opção == 2:
+    elif opção == 2:
         print(f'{n1} . {n2} = {n1*n2}')
-elif opção == 3:
-    if n1 > n2:
+    elif opção == 3:
+        if n1 > n2:
             print(f'{n1} é maior que {n2}.')
-    elif n2 > n1:
+        elif n2 > n1:
             print(f'{n2} é maior que {n1}.')
-    else:
+        else:
             print('Os números representam o mesmo valor, portanto nenhum é maior.')
     elif opção == 4:
         print('Informe os números novamente.')
