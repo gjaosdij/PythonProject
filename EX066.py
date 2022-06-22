@@ -6,4 +6,4 @@ while True:
         break
     soma += numero
     contador += 1
-print(f'A soma dos {contador} valores foi {soma}.')
+print(f'A soma dos {contador} valores foi igual a {soma}.')
