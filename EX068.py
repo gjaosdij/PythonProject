@@ -1,21 +1,29 @@
-#Sistema de par e ímpar não funcional, o jogo apenas aceita vitória em quando a soma é par 
-
-import random
+from random import randint
 print('-='*15)
 print('Vamos jogar par ou ímpar.')
 print('-='*15)
 
 perdeu = vitorias = 0
 
-while not perdeu:
-    escolha = str(input('Par ou ímpar [P/I]? ')).strip()
+while True:
+    escolha = str(input('Par ou ímpar [P/I]? ')).strip().upper()
     jogada = int(input('Digite um valor: '))
-    computador = random.randint
-    if (jogada + computador) % 2 == 0:
-        print('Você venceu!\nVamos jogar novamente...')
-        vitorias += 1
-    else:
-        print('Você PERDEU!!!')
-        break
+    computador = randint(0, 11)
+    total = jogada + computador
+    
+    if escolha == 'P':
+        if total % 2 == 0:
+            print('Você venceu!\nVamos jogar novamente...')
+            vitorias += 1
+        else:
+            print('Você PERDEU!!!')
+            break
+    if escolha == 'I':
+        if total % 2 == 0:
+            print('Você PERDEU!!!')
+            break
+        else:
+            print('Você venceu!\nVamos jogar novamente...')
+            vitorias += 1
 print('-='*20)
-print('Game over! Você venceu {} vezes.')
+print(f'Game over! Você venceu {vitorias} vezes.')
