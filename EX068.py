@@ -6,10 +6,16 @@ print('-='*15)
 perdeu = vitorias = 0
 
 while True:
-    escolha = str(input('Par ou ímpar [P/I]? ')).strip().upper()
+    escolha = ' '
+    while escolha not in 'PI':
+        escolha = str(input('Par ou ímpar [P/I]? ')).strip().upper()
     jogada = int(input('Digite um valor: '))
     computador = randint(0, 11)
     total = jogada + computador
+    print('-'*30)
+    print(f'Você jogou {jogada} e o computador {computador}, totalizando em {total}.', end=' ')
+    print('Deu par.' if total % 2 == 0 else 'Deu ímpar.', end=' ')
+    print('Você escolheu {}.'.format('par' if escolha == 'P' else 'ímpar'))
     
     if escolha == 'P':
         if total % 2 == 0:
