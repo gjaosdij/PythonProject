@@ -21,6 +21,6 @@ while True:
             break
     else:
         print('ERROR')
-print(f'O total da compra foi {}.')
+print(f'O total da compra foi {total}.')
 print('Temos {} produto{} custando mais que R$1000.00.')
 print('O produto mais barato foi {} que custa R${}.')
