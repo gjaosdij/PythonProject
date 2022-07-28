@@ -6,7 +6,6 @@ print('{: ^30}'.format('LOJA SUPER BARATÃO'))
 print('-'*30)
 
 while True:
-    produto = continuar = ' '
     preço = 0
 
     produto = str(input('Nome do produto: ')).strip()
@@ -24,7 +23,9 @@ while True:
         if preço < maisbarato:
             maisbarato = preço
             produtobarato = produto
-
+    
+    continuar = ' '
+    
     while continuar not in 'SN':
         continuar = str(input('Quer continuar [S/N]? ')).strip().upper()
         if continuar not in 'SN':
