@@ -18,4 +18,12 @@ if num9 == 0:
 elif num9 > 0:
     print(f'O numero 9 foi digitado {num9} vez{"" if num9 == 1 else "es"}.')
 
-print(f'O primeiro valor 3 foi digitado na {numeros.index(3)+1}ª posição.')
+if 3 in numeros:
+    print(f'O primeiro valor 3 foi digitado na {numeros.index(3)+1}ª posição.')
+else:
+    print('O valor 3 não foi digitado.')
+
+print('Os valores pares digitados foram:', end=' ')
+for n in numeros:
+    if n % 2 == 0:
+        print(n, end=' ')
