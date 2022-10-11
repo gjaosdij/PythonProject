@@ -1,5 +1,3 @@
-#Terminar maior e menor
-
 listanum = []
 maior = menor = 0
 
@@ -13,8 +11,11 @@ for c in range(0,5):
         if menor > listanum[c]:
             menor = listanum[c]
 print('Você digitou os valores', listanum)
-print(f'O maior valor digitado foi {maior} que aparece nas posições', end='')
+print(f'O maior valor digitado foi {maior} que aparece nas posições', end=' ')
 for i, v in enumerate(listanum):
     if v == maior:
         print(f'{i}... ', end='')
-print(f'O menor valor digitado foi {menor}')
+print(f'\nO menor valor digitado foi {menor} que aparece nas posições', end=' ')
+for i, v in enumerate(listanum):
+    if v == menor:
+        print(f'{i}... ', end='')
